@@ -3,6 +3,7 @@ package com.example.diceroll;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -59,6 +60,8 @@ public class MainActivity extends AppCompatActivity {
 
     private int randomNumber () {
         double randomDouble = Math.random() * 6;
+        Log.i("Check", String.valueOf(randomDouble));
         return (int) randomDouble;
+
     }
 }
